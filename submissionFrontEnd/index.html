@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rak Buku App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf APP</h1>
+    </header>
+    <div class="container">
+      <h3 class="section-title">Add Book</h3>
+      <form action="" class="form" id="addBookForm">
+        <div class="form-group">
+          <label for="title">Book Title</label>
+          <input type="text" id="title" required />
+        </div>
+        <div class="form-group">
+          <label for="author">Book Author</label>
+          <input type="text" id="author" required />
+        </div>
+        <div class="form-group">
+          <label for="year">Publication Year</label>
+          <input type="number" id="year" required />
+        </div>
+        <div class="form-group row">
+          <input type="checkbox" class="check" id="isRead" />
+          <label for="read">Already Read</label>
+        </div>
+        <button type="submit" class="btn">Add Book</button>
+      </form>
+    </div>
+    <div class="container sticky">
+      <h3 class="section-title">Search Book by title</h3>
+      <input type="text" id="searchInput" />
+    </div>
+    <div class="container">
+      <h3 class="section-title">Not Finished Reading</h3>
+      <div class="books-wrapper" id="unfinishedRead"></div>
+    </div>
+    <div class="container">
+      <h3 class="section-title">Finished Reading</h3>
+      <div class="books-wrapper" id="finishedRead"></div>
+    </div>
+    <!-- Toast -->
+    <div class="toast">
+      <h3>Success adding book</h3>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
